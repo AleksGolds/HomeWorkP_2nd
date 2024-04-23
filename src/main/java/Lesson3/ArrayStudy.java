@@ -18,13 +18,15 @@ public class ArrayStudy {
 
         Arrays.fill(arrayint, 10);
 
-        for (int i = 0; i < arrayint.length; i++) {
+        /*for (int i = 0; i < arrayint.length; i++) {
             arrayint[i] = i + 1;
             System.out.println(arrayint[i]);
-        }
+        }*/
+
         int dda[][] = new int[4][4];
-        System.out.println(Arrays.toString(arrayint));
-        System.out.println(Arrays.toString(dda[0]));
+       /* System.out.println(Arrays.toString(arrayint));
+        System.out.println(Arrays.toString(dda[0]));*/
+
 
 
         // заполним данными от 1 до 16
@@ -53,8 +55,8 @@ public class ArrayStudy {
                 index++;
             }
         }
-        for (int i = 0; i < doubleMas.length; i++) {
-            System.out.println(Arrays.toString(doubleMas[i]));
+        //for (int i = 0; i < doubleMas.length; i++) {
+            //System.out.println(Arrays.toString(doubleMas[i]));
 
 
         }
@@ -63,4 +65,4 @@ public class ArrayStudy {
 
 
     }
-}
+
