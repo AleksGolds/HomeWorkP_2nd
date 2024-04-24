@@ -3,14 +3,14 @@ package src.main.java.Lesson_5;
 public class Cat {
     private String name;
     private String color;
-    int age;
+    private int age;
+    private int appetite;
 
     public Cat(String name, String color, int age) {
-        super();
-        validateAge(age);
         this.name = name;
         this.color = color;
         this.age = age;
+
     }
 
     public Cat(String name, int age) {
@@ -18,7 +18,7 @@ public class Cat {
     }
 
     public Cat() {
-        this("Степан", "Бандитский",5 );
+        this("Степан", "Бандитский",5);
         System.out.println("Создаём кота, которого видим впервые");
     }
 
@@ -28,7 +28,12 @@ public class Cat {
                 "name='" + name + '\'' +
                 ", color='" + color + '\'' +
                 ", age=" + age +
+                ", appetite=" + appetite +
                 '}';
+    }
+
+    public void info(){
+        System.out.println(toString());
     }
     public String getName(){
         return this.name;
@@ -48,6 +53,14 @@ public class Cat {
         this.color = color;
     }
 
+    public int getAppetite() {
+        return appetite;
+    }
+
+    public void setAppetite(int appetite) {
+        this.appetite = appetite;
+    }
+
     public void setAge(int age) {
         validateAge(age);
         this.age = age;
@@ -60,6 +73,13 @@ public class Cat {
         if (age>25) {
             throw new IllegalArgumentException("Коты столько не живут");
         }
+    }
+
+    public void eatFood(Plate plate){
+        //plate.setFoodCount(plate.getFoodCount() - this.getAppetite());
+        plate.decreaseCount(this.appetite);
+        this.appetite = 0;
+
     }
 
 

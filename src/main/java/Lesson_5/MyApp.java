@@ -27,14 +27,31 @@ public class MyApp {
 
     public static void main(String[] args) {
         //testCats();
-        User user = new User(1, "Vasya", "Dvornik",33);
+//        User user = new User(1, "Vasya", "Dvornik",33);
+//
+//        System.out.println(user.isOlderThan18());
+//
+//        System.out.println(UserUtil.isUserOlderThan18(user));
+//
+//        Vahkter vakhter = new Vahkter("Kolyan");
+//        vakhter.checkUsers(new User[]{user});
 
-        System.out.println(user.isOlderThan18());
+        //Покорми кота
+        Cat cat = new Cat();
+        cat.setAppetite(30);
+        Plate plate = new Plate(150);
 
-        System.out.println(UserUtil.isUserOlderThan18(user));
+        plate.setFoodCount(plate.getFoodCount() - cat.getAppetite());
 
-        Vahkter vakhter = new Vahkter("Kolyan");
-        vakhter.checkUsers(new User[]{user});
+        cat.info();
+        plate.info();
+
+        cat.eatFood(plate);
+
+        cat.info();
+        plate.info();
+
+
 
 
 
