@@ -22,9 +22,9 @@ public class ConsoleReader {
         int index = random.nextInt(array.length);
         System.out.println(array[index]);
 
-        System.out.printf("Ваш Массив %s", Arrays.toString(array));
-        System.out.printf("Минимум вашего массива %d", ArrayTasks.findMin(array));
-        System.out.printf("Тут мы выведем строку: %s, а тут выведем число %d","string",10);
+        System.out.printf("\nВаш Массив %s", Arrays.toString(array));
+        System.out.printf("\nМинимум вашего массива %d", ArrayTasks.findMin(array));
+        System.out.printf("\nТут мы выведем строку: %s, а тут выведем число %d","string",10);
     }
 
 
