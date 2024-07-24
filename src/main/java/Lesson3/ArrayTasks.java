@@ -1,4 +1,4 @@
-package src.main.java.Lesson3;
+package Lesson3;
 
 public class ArrayTasks {
     public static void main(String[] args) {
